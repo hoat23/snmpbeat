@@ -1,5 +1,63 @@
 # snmpbeat
 Custom beat for snmp monitoring in firewall
+
+### Configurando snmpbeat.yml
+```
+otilio:
+  # Defines how often an event is sent to the output
+  period: 1s
+
+  # SNMP hosts to query
+  hosts: ["192.168.1.1", "192.168.1.2"]
+
+  # SMNP version: 1, 2c or 3
+  version: 2c
+
+  # SNMP community
+  community: "public"
+
+  # oids to query
+  # (the starting dot is intended)
+  oids:
+    - {oid: ".1.3.6.1.2.1.1.1.0", name: sysDescr}
+    - {oid: ".1.3.6.1.2.1.1.3.0", name: sysUpTime}
+```
+This will get oids `1.3.6.1.2.1.1.1.0` and `1.3.6.1.2.1.1.3.0` from SNMP servers at 192.168.1.1 and 192.168.1.2 and store them in `otilio-YYYY.MM.DD` index in Elasticsearch in fields `sysDescr` and `sysUpTime`.
+
+SNMP V3 configuration example
+
+```
+otilio:
+  # Defines how often an event is sent to the output
+  period: 1s
+
+  # SNMP host to query
+  hosts: ["127.0.0.1"]
+  port: 10161
+
+  # SMNP version
+  version: 3
+
+  # SNMP user security model parameters
+  # currently only SHA auth and DES encryption supported ¯\_(ツ)_/¯
+  user: "theuser"
+  authpass: "theauthpassword"
+  privpass: "theprivacyencryptionpassword"
+
+  # oids to query
+  # (the starting dot is intended)
+  oids:
+    - {oid: ".1.3.6.1.2.1.25.1", name: hrSystem}
+```
+
+### Runing
+
+#### Modo Debug
+
+```
+./snmpbeat -c snmpbeat.yml -e -d "*"
+```
+
 ## Instalacion de GO
 Link : https://linuxize.com/post/how-to-install-go-on-centos-7/
 
@@ -30,8 +88,7 @@ Guardando el archivo y cargar el new PATH  a las variables de entorno
 
 ## Compilación de snmpbeat
 
-
-### Árbol de carpetas
+## Árbol de carpetas
 - $GOPATH: ruta al espacio de trabajo
    - snmpbeat.yml : Archivo de configuración requerido por snmpbeat
    - [src] : Carpetas que contiene el codigo fuente a ser compilado
