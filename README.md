@@ -1,5 +1,5 @@
 # snmpbeat
-Custom beat for snmp monitoring in firewall
+Custom beat for snmp monitoring in firewall. Este codigo esta basado en https://github.com/isalgueiro/otilio
 
 ### Configurando snmpbeat.yml
 ```
