@@ -32,15 +32,12 @@ Guardando el archivo y cargar el new PATH  a las variables de entorno
 
 
 ### Árbol de carpetas
-
-
-
 - $GOPATH: ruta al espacio de trabajo
    - snmpbeat.yml : Archivo de configuración requerido por snmpbeat
    - [src] : Carpetas que contiene el codigo fuente a ser compilado
        - [github.com]  :Carpeta adicional para agregar el codigo de github
           - [hoat23]
-             - [snmpbeat] :Carpeta con el codigo de <snmpbeat
+             - [snmpbeat] :Carpeta con el codigo fuente
           - [elastic]
              - [beats] :Carpeta con el codigo adicional para compilar el beats
                 - [libbeat]      :Libreria muy importante para la compilación del código
@@ -73,14 +70,8 @@ Guardando el archivo y cargar el new PATH  a las variables de entorno
                 - NOTICE.txt
                 - reviewdog.yml
                 - setup.yml
-
-
-
-
-                
+          
 
 
    
-   
-
-
+ 
