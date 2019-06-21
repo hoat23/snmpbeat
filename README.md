@@ -7,7 +7,7 @@ $ wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
 
 Verificar el tarball
 
-$ sha256sum go1.10.3.linux-amd64.tar.gz
+> sha256sum go1.10.3.linux-amd64.tar.gz
 
 El checksum deberia arrojar lo siguiente:
 
@@ -15,16 +15,16 @@ El checksum deberia arrojar lo siguiente:
 
 Extraer el archivo en "/usr/local/"
 
-$ fa1b0e45d3b647c252f51f5e1204aba049cde4af177ef9f2181f43004f901035  go1.10.3.linux-amd64.tar.gz
+> fa1b0e45d3b647c252f51f5e1204aba049cde4af177ef9f2181f43004f901035  go1.10.3.linux-amd64.tar.gz
 
 Ajustar la variable de entorno
 
-$ export GOROOT=/usr/local/go
-$ export PATH=$PATH:/usr/local/go/bin
+> export GOROOT=/usr/local/go
+> export PATH=$PATH:/usr/local/go/bin
 
 Guardando el archivo y cargar el new PATH  a las variables de entorno
 
-$ source ~/.bash_profile
+> source ~/.bash_profile
 
 ## Compilación de snmpbeat
 
