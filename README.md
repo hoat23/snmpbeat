@@ -3,7 +3,8 @@ Custom beat for snmp monitoring in firewall
 ## Instalacion de GO
 Link : https://linuxize.com/post/how-to-install-go-on-centos-7/
 Descargar goland usado "wget" o "curl"
-$ wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
+
+> wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
 
 Verificar el tarball
 
