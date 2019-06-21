@@ -32,43 +32,43 @@ Guardando el archivo y cargar el new PATH  a las variables de entorno
 
 ### Árbol de carpetas
 >-> $GOPATH: ruta al espacio de trabajo
->   |-> snmpbeat.yml : Archivo de configuración requerido por snmpbeat
->   |-> [src] : Carpetas que contiene el codigo fuente a ser compilado
->       |-> [github.com]  :Carpeta adicional para agregar el codigo de github
->          |-> [hoat23]
+>   -> snmpbeat.yml : Archivo de configuración requerido por snmpbeat
+>   -> [src] : Carpetas que contiene el codigo fuente a ser compilado
+>       -> [github.com]  :Carpeta adicional para agregar el codigo de github
+>          -> [hoat23]
 >             |-> [snmpbeat] :Carpeta con el codigo de <snmpbeat>
->          |-> [elastic]
->             |-> [beats] :Carpeta con el codigo adicional para compilar el beats
->                !->[libbeat]      :Libreria muy importante para la compilación del código
->                !->[auditbeat]
->                !->[heartbeat]
->                !->[metricbeat]
->                !->[packetbeat]
->                !->[winlogbeat]
->                !->[deploy]
->                !->[dev-tools]
->                !->[docs]
->                !->[filebeat]
->                !->[generator]
->                !->[journalbeat]
->                !->[licenses]
->                !->[script]
->                !->[testing]
->                !->[vendor]
->                !->.editorconfigj
->                !->.gitattributes
->                !->.gitnore
->                !->.go-version
->                !->.travis.yml
->                !->.PYLITRC
->                !->Jenkisfile
->                !->LICENCE.txt
->                !->magefile.go    : Archivo make para la compilación con go
->                !->MAKE.BAT
->                !->mAKEFILE
->                !->NOTICE.txt
->                !->reviewdog.yml
->                !->setup.yml
+>          -> [elastic]
+>             -> [beats] :Carpeta con el codigo adicional para compilar el beats
+>                ->[libbeat]      :Libreria muy importante para la compilación del código
+>                ->[auditbeat]
+>                ->[heartbeat]
+>                ->[metricbeat]
+>                ->[packetbeat]
+>                ->[winlogbeat]
+>                ->[deploy]
+>                ->[dev-tools]
+>                ->[docs]
+>                ->[filebeat]
+>                ->[generator]
+>                ->[journalbeat]
+>                ->[licenses]
+>                ->[script]
+>                ->[testing]
+>                ->[vendor]
+>                ->.editorconfigj
+>                ->.gitattributes
+>                ->.gitnore
+>                ->.go-version
+>                ->.travis.yml
+>                ->.PYLITRC
+>                ->Jenkisfile
+>                ->LICENCE.txt
+>                ->magefile.go    : Archivo make para la compilación con go
+>                ->MAKE.BAT
+>                ->mAKEFILE
+>                ->NOTICE.txt
+>                ->reviewdog.yml
+>                ->setup.yml
                 
 
 
