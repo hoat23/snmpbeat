@@ -33,82 +33,83 @@ Guardando el archivo y cargar el new PATH  a las variables de entorno
 
 ### Árbol de carpetas
 
->- $GOPATH: ruta al espacio de trabajo
 
->   - snmpbeat.yml : Archivo de configuración requerido por snmpbeat
+- $GOPATH: ruta al espacio de trabajo
 
->   - [src] : Carpetas que contiene el codigo fuente a ser compilado
+   - snmpbeat.yml : Archivo de configuración requerido por snmpbeat
 
->       - [github.com]  :Carpeta adicional para agregar el codigo de github
+   - [src] : Carpetas que contiene el codigo fuente a ser compilado
 
->          - [hoat23]
+       - [github.com]  :Carpeta adicional para agregar el codigo de github
 
->             - [snmpbeat] :Carpeta con el codigo de <snmpbeat
->
+          - [hoat23]
 
->          - [elastic]
+             - [snmpbeat] :Carpeta con el codigo de <snmpbeat
+             
+          - [elastic]
 
->             - [beats] :Carpeta con el codigo adicional para compilar el beats
+             - [beats] :Carpeta con el codigo adicional para compilar el beats
 
->                - [libbeat]      :Libreria muy importante para la compilación del código
+                - [libbeat]      :Libreria muy importante para la compilación del código
 
->                - [auditbeat]
+                - [auditbeat]
 
->                - [heartbeat]
+                - [heartbeat]
 
->                - [metricbeat]
+                - [metricbeat]
 
->                - [packetbeat]
+                - [packetbeat]
 
->                - [winlogbeat]
+                - [winlogbeat]
 
->                - [deploy]
+                - [deploy]
 
->                - [dev-tools]
+                - [dev-tools]
 
->                - [docs]
+                - [docs]
 
->                - [filebeat]
+                - [filebeat]
 
->                - [generator]
+                - [generator]
 
->                - [journalbeat]
+                - [journalbeat]
 
->                - [licenses]
+                - [licenses]
 
->                - [script]
+                - [script]
 
->                - [testing]
+                - [testing]
 
->                - [vendor]
+                - [vendor]
 
->                - .editorconfigj
+                - .editorconfigj
 
->                - .gitattributes
+                - .gitattributes
 
->                - .gitnore
+                - .gitnore
 
->                - .go-version
+                - .go-version
 
->                - .travis.yml
+                - .travis.yml
 
->                - .PYLITRC
+                - .PYLITRC
 
->                - Jenkisfile
+                - Jenkisfile
 
->                - LICENCE.txt
+                - LICENCE.txt
 
->                - magefile.go    : Archivo make para la compilación con go
+                - magefile.go    : Archivo make para la compilación con go
 
->                - MAKE.BAT
+                - MAKE.BAT
 
->                - mAKEFILE
+                - mAKEFILE
 
->                - NOTICE.txt
+                - NOTICE.txt
 
->                - reviewdog.yml
+                - reviewdog.yml
 
->                - setup.yml
+                - setup.yml
+
 
 
                 
