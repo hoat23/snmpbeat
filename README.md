@@ -3,7 +3,7 @@ Custom beat for snmp monitoring in firewall. Este codigo esta basado en https://
 
 ### Configurando snmpbeat.yml
 ```
-otilio:
+snmpbeat:
   # Defines how often an event is sent to the output
   period: 1s
 
@@ -27,7 +27,7 @@ This will get oids `1.3.6.1.2.1.1.1.0` and `1.3.6.1.2.1.1.3.0` from SNMP servers
 SNMP V3 configuration example
 
 ```
-otilio:
+snmpbeat:
   # Defines how often an event is sent to the output
   period: 1s
 
