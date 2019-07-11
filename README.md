@@ -59,7 +59,7 @@ snmpbeat:
 ./snmpbeat -c snmpbeat.yml -e -d "*"
 ```
 
-## Instalacion de GO
+## Instalacion de GO en Centos7 
 Link : https://linuxize.com/post/how-to-install-go-on-centos-7/
 
 Descargar goland usado "wget" o "curl"
