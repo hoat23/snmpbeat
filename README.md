@@ -1,6 +1,7 @@
 # snmpbeat
 Custom beat for snmp monitoring in firewall and sending data to Elastic or Logstash. Support snmpget and snmpwalk.
-Este codigo esta basado en https://github.com/isalgueiro/otilio
+
+Este codigo esta basado en https://github.com/isalgueiro/otilio, se agrego soporte de snmpwalk.
 
 ### Configurando snmpbeat.yml
 ```
