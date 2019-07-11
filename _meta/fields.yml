@@ -1,0 +1,8 @@
+- key: snmpbeat
+  title: snmpbeat
+  description:
+  fields:
+    - name: type
+      type: keyword
+      required: true
+      description: Document type ("snmpbeat")
