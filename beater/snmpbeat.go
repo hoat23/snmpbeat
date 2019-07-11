@@ -10,11 +10,11 @@ import (
 	"github.com/elastic/beats/libbeat/publisher"
 	"github.com/soniah/gosnmp"
 
-	"github.com/isalgueiro/otilio/config"
+	"github.com/hoat23/snmpbeat/config"
 )
 
-// Otilio data type
-type Otilio struct {
+// snmpbeat data type
+type snmpbeat struct {
 	done      chan struct{}
 	config    config.Config
 	client    publisher.Client
@@ -45,12 +45,12 @@ func New(b *beat.Beat, cfg *common.Config) (beat.Beater, error) {
 	m := make(map[string]string)
 	var o []string
 	for _, v := range config.OIDs {
-		logp.Debug("otilio", "OID %s translates to %s in event", v["oid"], v["name"])
+		logp.Debug("snmpbeat", "OID %s translates to %s in event", v["oid"], v["name"])
 		m[v["oid"]] = v["name"]
 		o = append(o, v["oid"])
 	}
 
-	bt := &Otilio{
+	bt := &snmpbeat{
 		done:      make(chan struct{}),
 		config:    config,
 		version:   version,
@@ -61,8 +61,8 @@ func New(b *beat.Beat, cfg *common.Config) (beat.Beater, error) {
 }
 
 // Run runs the beater
-func (bt *Otilio) Run(b *beat.Beat) error {
-	logp.Info("otilio is running! Hit CTRL-C to stop it.")
+func (bt *snmpbeat) Run(b *beat.Beat) error {
+	logp.Info("snmpbeat is running! Hit CTRL-C to stop it.")
 
 	bt.client = b.Publisher.Connect()
 	ticker := time.NewTicker(bt.config.Period)
@@ -114,7 +114,7 @@ func (bt *Otilio) Run(b *beat.Beat) error {
 						default:
 							value = gosnmp.ToBigInt(v.Value)
 						}
-						logp.Debug("otilio", "%s = %s", k, value)
+						logp.Debug("snmpbeat", "%s = %s", k, value)
 						event.Put(k, value)
 					}
 					bt.client.PublishEvent(event)
@@ -126,7 +126,7 @@ func (bt *Otilio) Run(b *beat.Beat) error {
 }
 
 // Stop stops the beater
-func (bt *Otilio) Stop() {
+func (bt *snmpbeat) Stop() {
 	bt.client.Close()
 	close(bt.done)
 }
